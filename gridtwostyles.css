@@ -1,0 +1,167 @@
+/*Css*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC|Roboto:300,400&display=swap');
+
+
+section,
+section::before,
+section::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+section .grid-two {
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+}
+
+.container-grid-two {
+  width: 90%;
+  /* max-width: rem; was originally set to 120px*/
+  margin: 0 auto;
+  padding: 0rem;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+  grid-template-areas: 'img-1 img-2 img-3 img-3'
+    'img-1 img-4 img-5 img-6'
+    'img-7 img-7 img-8 img-6';
+}
+
+.image-gallery a {
+  width: 100%;
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.image-gallery a i {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 3rem;
+  position: relative;
+  z-index: 100;
+  padding: 1rem 3rem;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: .4rem;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.image-gallery a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.image-gallery a:hover i,
+.image-gallery a:hover::before {
+  opacity: 1;
+}
+
+.img-1 {
+  grid-area: img-1;
+  min-height: 51.5rem;
+  background-image: url("artimages/Gal2-img3-apples.jpg");
+}
+
+.img-2 {
+  grid-area: img-2;
+  background-image: url("artimages/Gal2-img1-psyche.jpg");
+}
+
+.img-3 {
+  grid-area: img-3;
+  background-image: url("artimages/Gal1-img5-vangogh.jpg");
+}
+
+.img-4 {
+  grid-area: img-4;
+  background-image: url("artimages/Gal2-img2-barguefoot.jpg");
+}
+
+.img-5 {
+  grid-area: img-5;
+  background-image: url("artimages/Gal2-img4-abstract.jpg");
+}
+
+.img-6 {
+  grid-area: img-6;
+  min-height: 51.5rem;
+  background-image: url("artimages/Gal2-img7-landscape.jpg");
+}
+
+.img-7 {
+  grid-area: img-7;
+  background-image: url("artimages/Gal2-img8-gauguin.jpg");
+}
+
+.img-8 {
+  grid-area: img-8;
+  background-image: url("artimages/Gal2-img5-portraitsepia.jpg");
+}
+
+/* #region Media Queries Grid-Picture-Gallery-Two */
+@media screen and (max-width: 900px) {
+  .image-gallery {
+    grid-template-areas: 'img-1 img-1 img-2 img-2'
+      'img-1 img-1 img-3 img-3'
+      'img-4 img-4 img-5 img-5'
+      'img-6 img-7 img-7 img-7'
+      'img-8 img-8 img-8 img-8';
+  }
+
+  .image-gallery a {
+    height: 20rem;
+  }
+
+
+  .img-1 {
+    min-height: 41.5rem;
+  }
+
+  .img-6 {
+    min-height: 20rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-gallery {
+    grid-template-areas: 'img-1 img-1 img-1 img-1'
+      'img-2 img-2 img-2 img-2'
+      'img-3 img-3 img-3 img-3'
+      'img-4 img-4 img-4 img-4'
+      'img-5 img-5 img-5 img-5'
+      'img-6 img-6 img-6 img-6'
+      'img-7 img-7 img-7 img-7'
+      'img-8 img-8 img-8 img-8';
+  }
+
+  .image-gallery a,
+  .img-1,
+  .img-6 {
+    min-height: 30rem;
+    height: 30rem;
+  }
+}
+/* #endregion Media Queries Grid-Picture-Gallery-Two */

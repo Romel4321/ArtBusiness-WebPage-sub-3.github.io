@@ -1,0 +1,199 @@
+/* #region BEGIN SOCIAL MEDIA CARDS   */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap');
+
+.card-container {
+  font-size: 62.5%;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-size: cover;
+  /* background-color: rgba(20, 20, 26, 0.884); */
+  /* background-image: url('images-dark/pexels-nothing-ahead-6924270.jpg'); */
+}
+
+.container::before {
+  content: "Shop";
+  font-family: 'Pinyon Script', cursive;
+  padding-top: .1em;
+  padding-bottom: -1em;
+  padding-left: .5em;
+  padding-right: 7em;
+  outline: rgb(8, 8, 8) dotted 0.005em;
+  border: 0.001em solid #FED85D;
+  background-image: url('images-dark/imgdark5.jpg');
+  color: #FED85D;
+  font-size: 5em;
+  font-weight: 200;
+  text-shadow: .01em .01em .5em rgb(212, 204, 204);
+  background-size: cover;
+}
+
+.container {
+  max-width: 100%;
+  padding: 1.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 4rem;
+}
+
+.card {
+  font-family: sans-serif;
+  outline: #FED85D solid 0.1em;
+  border: 0.1em solid #2D383A;
+  color: #1B1B1B;
+  padding: 1.5rem;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card.twitter {
+  background-image: url('artimages/shopping-1.png');
+}
+
+.card.instagram {
+  background-image: url('artimages/shopping-1.jpg');
+  background-position:left bottom;
+}
+
+.card.facebook {
+  background-image: url('artimages/shopping-3.jpg');
+}
+
+.card.youtube {
+  background-image: url('artimages/shopping-4.jpg');
+   background-position:center top;
+}
+
+.card_title-large {
+  font-family: 'Space Mono', monospace, helvetica; 
+  font-size: 10rem;
+  letter-spacing: 0.5rem;
+  transform: translateX(7rem);
+  color: #1d1d1d;
+  transition: transform 5s;
+}
+
+.card_title-large.faa{
+  font-family: 'Big Shoulders Inline Text', 'Times New Roman', Times, serif; 
+  color: #111110;
+}
+
+
+.card_title-large.saatchi{
+ font-family: 'Space Mono', monospace, helvetica; 
+   color: #111110;
+   font-size: 8em;;
+}
+
+.card_title-large.red-bubble{
+  font-family: 'Big Shoulders Inline Text', 'Times New Roman', Times, serif; 
+  color: #111110;
+}
+
+.card_title-large.u-tube{
+ font-family: 'Space Mono', monospace, helvetica; 
+  color: #111110;
+}
+
+.card:hover .card_title-large.faa {
+  transform: translateX(-150%);
+  color:#757575;
+}
+.card:hover .card_title-large.saatchi {
+  transform: translateX(-150%);
+  color: #A6A6A6;   
+}
+
+.card:hover .card_title-large.red-bubble {
+  transform: translateX(-150%);
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
+}
+
+.card:hover .card_title-large.u-tube {
+  transform: translateX(-120%);
+  color: #FEFEFA;
+}
+
+.card_title-small {
+  font-size: 1.6;
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.card-cta {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 1rem;
+  align-self: flex-end;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: .05em;
+  color:#00021E;
+}
+
+.card-cta:hover.faa-link{
+  color: #A6A6A6; 
+}
+
+.card-cta:hover.saatchi-link{
+  color: white;
+}
+
+
+.card-cta:hover.redbubble-link{
+  color: #002800; 
+}
+
+.card-cta:hover.turning-link{
+  color: #4d0000; 
+}
+
+.card.twitter:hover {
+  background-image: radial-gradient(at 20% 128%, #0c1024 30%, #22173d 60%, #1a0836 650%);
+}
+
+.card.instagram:hover {
+  background-image: linear-gradient(74deg, rgba(2, 0, 36, 1) 0%, rgba(91, 7, 41, 1) 0%, rgba(121, 9, 43, 1) 8%, rgb(18, 40, 44) 100%);
+}
+
+.card.facebook:hover {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,d2ebf9+100;Blue+3D+%2312 */
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+background: rgb(181,189,200); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+}
+
+.card.youtube:hover {
+  background-image: radial-gradient(at 20% 128%, #02020e 20%, #032029d8 60%, #02051f 90%);
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+/* #endregion END SOCIAL MEDIA CARDS */
+
+/* The written letter is something personal, organic, unique and spontaneous. It mirrors the character and the personality of the writer, and often his mood of the moment.
+Emil Ruder */
+/* 
+Letters act as practical and useful signs, but also as pure and inner melody.
+Wassily Kandinsky */

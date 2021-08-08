@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+hr {
+  max-width: 80%;
+  height: 0.05em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #C39953;
+  border: 0 none;
+  margin-top: 40px;
+  margin-bottom: 2em;
+}
+
+footer {
+  /* background-color: rgba(14, 12, 12, 0.5); */
+  padding-top: 2em;
+}
+
+.details {
+  text-align: center;
+  font-family: 'Pinyon Script', cursive;
+}
+
+.details h2 {
+  font-size: 3em;
+  letter-spacing: 0.05em;
+  color: #C39953;
+  font-weight: 100;
+  background-image: url(images-dark/imgdark5.jpg);
+  background-size: cover;
+  text-align: center;
+
+  
+}
+
+.details h2 span {
+  font-weight: 100;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  border-bottom: 0.005em dotted #C39953;
+  font-family: 'Major Mono Display', monospace;
+}
+.telephone{
+  font-family: 'Major Mono Display', monospace;
+    color: #C39953;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+}
+
+.social-icons {
+  padding: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background: radial-gradient(circle, rgba(4, 21, 26, 0.596) 65%, rgba(43, 44, 44, 0.87) 0%);
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+  font-size: 1.7em;
+  font-weight: 500;
+  border: .5px solid #C39953;
+  margin: 20px;
+}
+
+.social-icons a .fa {
+  line-height: 60px;
+  color: #C39953;
+
+}
+
+.social-icons .fb:hover {
+  background: rgba(10, 10, 10, 0.575);
+  line-height: 60px;
+}
+
+.social-icons  .fa-facebook:hover{
+  color:rgb(221, 115, 15);
+}
+
+.social-icons .twitter:hover {
+  background: rgba(54, 8, 8, 0.863);
+  line-height: 60px;
+}
+
+.social-icons  .fa-linkedin:hover{
+  color:white;
+  
+}
+
+.social-icons .envelope:hover {
+  background: rgba(220, 213, 226, 0.856);
+  line-height: 60px;
+    
+
+}
+
+.social-icons  .fa-pinterest:hover{
+   color: black;
+
+}
+
+.social-icons .instagram:hover {
+  background: rgba(27, 27, 26, 0.836);
+  line-height: 60px;
+}
+
+.social-icons  .fa-instagram:hover{
+  color:rgb(245, 245, 247);
+}
+
+
+
+
+
+
+
